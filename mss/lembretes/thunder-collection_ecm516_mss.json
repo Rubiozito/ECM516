@@ -1,0 +1,82 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "ecm516_mss",
+    "collectionId": "3c579a35-f767-477a-a844-273ac5fddaf6",
+    "dateExported": "2024-04-27T14:20:42.497Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "9b9e921f-5822-4dde-a88a-712437fb511e",
+            "name": "lembretes",
+            "containerId": "",
+            "created": "2024-04-27T13:28:55.804Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "99054ffe-0331-40c5-8433-dfc5b5c67813",
+            "colId": "3c579a35-f767-477a-a844-273ac5fddaf6",
+            "containerId": "9b9e921f-5822-4dde-a88a-712437fb511e",
+            "name": "Obter lembretes",
+            "url": "localhost:4000/lembretes",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-04-27T13:25:38.984Z",
+            "modified": "2024-04-27T13:26:20.542Z",
+            "headers": []
+        },
+        {
+            "_id": "85fb1a60-37a8-4418-b59c-0e4e2ae458fe",
+            "colId": "3c579a35-f767-477a-a844-273ac5fddaf6",
+            "containerId": "9b9e921f-5822-4dde-a88a-712437fb511e",
+            "name": "Salvar lembrete",
+            "url": "localhost:4000/lembretes",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-27T13:27:45.767Z",
+            "modified": "2024-04-27T13:47:29.696Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"texto\": \"Fazer Janta\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "00c5de5c-aeb7-4f89-ad4c-fe3121f0c7d9",
+            "colId": "3c579a35-f767-477a-a844-273ac5fddaf6",
+            "containerId": "9b9e921f-5822-4dde-a88a-712437fb511e",
+            "name": "Apagar Lembrete",
+            "url": "localhost:4000/lembretes",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-04-27T13:45:25.145Z",
+            "modified": "2024-04-27T13:49:32.666Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"1\"\n}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "bcc19d66-4c5a-4874-8213-61f28bd721d0",
+            "colId": "3c579a35-f767-477a-a844-273ac5fddaf6",
+            "containerId": "9b9e921f-5822-4dde-a88a-712437fb511e",
+            "name": "Atualiazar lembrete",
+            "url": "localhost:4000/lembretes",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-04-27T13:46:17.189Z",
+            "modified": "2024-04-27T13:48:35.871Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"1\",\n  \"texto\": \"Fazer 2 Cafés\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "1-EqNpINhQYY-9AsVwejjtF1lIvDRQaWE4h5i6mfF0Q8n2QI5mbu9J1JXJ3aT38y6qUGHkM7JMb8oz-Kc4712Q"
+}
