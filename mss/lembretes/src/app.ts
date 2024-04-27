@@ -1,3 +1,5 @@
+import dotenv from "dotenv";
+dotenv.config();
 import express from "express";
 import axios from "axios";
 const app = express();
@@ -24,6 +26,18 @@ app.post("/lembretes", (req, res) => {
   lembretes[id] = lembrete;
   id = (+id + 1).toString();
   res.json(lembretes);
+});
+
+app.put("/lembretes", (req, res) => {
+  const { id, texto } = req.body;
+  lembretes[id].texto = texto;
+  res.json(lembretes);
+});
+
+app.delete("/lembretes/", (req, res) => {
+  const { id } = req.body;
+  delete lembretes[id];
+  res.end();
 });
 
 const PORT = 4000;
