@@ -1,5 +1,3 @@
-import { log } from "console";
-
 class Pizza {
   preparar() {
     console.log("Preparando pizza");
